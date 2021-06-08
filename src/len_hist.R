@@ -1,20 +1,24 @@
 
+cwd = 'C:\\Users\\Ivan\\Documents\\hse21_H3K27ac_ZDNA_human\\src'
+setwd(cwd)
 source('lib.R')
 
 ###
 
-NAME <- 'DeepZ'
-#NAME <- 'H3K4me3_A549.ENCFF573MUH.hg19'
-#NAME <- 'H3K4me3_A549.ENCFF573MUH.hg38'
-#NAME <- 'H3K4me3_A549.ENCFF832EOL.hg19'
-#NAME <- 'H3K4me3_A549.ENCFF832EOL.hg38'
+#NAME <- 'DeepZ'
+NAME <- 'H3K27ac_GM23338.ENCFF022FUU.hg19'
+#NAME <- 'H3K27ac_GM23338.ENCFF022FUU.hg38'
+#NAME <- 'H3K27ac_GM23338.ENCFF421LDL.hg19'
+#NAME <- 'H3K27ac_GM23338.ENCFF421LDL.hg38'
 
 ###
 
 bed_df <- read.delim(paste0(DATA_DIR, NAME, '.bed'), as.is = TRUE, header = FALSE)
-#colnames(bed_df) <- c('chrom', 'start', 'end', 'name', 'score')
-colnames(bed_df) <- c('chrom', 'start', 'end')
+colnames(bed_df) <- c('chrom', 'start', 'end', 'name', 'score')
+#colnames(bed_df) <- c('chrom', 'start', 'end')
 bed_df$len <- bed_df$end - bed_df$start
+
+
 
 ggplot(bed_df) +
   aes(x = len) +
