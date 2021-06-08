@@ -1,15 +1,15 @@
 
-cwd = 'C:\\Users\\Ivan\\Documents\\hse21_H3K27ac_ZDNA_human\\src'
+cwd = 'C:\\Users\\Ivan\\Documents\\hse21_H3K4me1_G4_human\\src'
 setwd(cwd)
 source('lib.R')
 
 ###
 
 #NAME <- 'DeepZ'
-NAME <- 'H3K27ac_GM23338.ENCFF022FUU.hg19'
-#NAME <- 'H3K27ac_GM23338.ENCFF022FUU.hg38'
-#NAME <- 'H3K27ac_GM23338.ENCFF421LDL.hg19'
-#NAME <- 'H3K27ac_GM23338.ENCFF421LDL.hg38'
+#NAME <- 'H3K4me1_A549.ENCFF379KHF.hg19'
+#NAME <- 'H3K4me1_A549.ENCFF379KHF.hg38'
+#NAME <- 'H3K4me1_A549.ENCFF675YHQ.hg19'
+NAME <- 'H3K4me1_A549.ENCFF675YHQ.hg38'
 
 ###
 

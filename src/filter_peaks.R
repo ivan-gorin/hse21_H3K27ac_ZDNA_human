@@ -1,10 +1,12 @@
 
+cwd = 'C:\\Users\\Ivan\\Documents\\hse21_H3K4me1_G4_human\\src'
+setwd(cwd)
 source('lib.R')
 
 ###
 
-#NAME <- 'H3K27ac_GM23338.ENCFF022FUU.hg19'
-NAME <- 'H3K27ac_GM23338.ENCFF421LDL.hg19'
+#NAME <- 'H3K4me1_A549.ENCFF379KHF.hg19'
+NAME <- 'H3K4me1_A549.ENCFF675YHQ.hg19'
 
 ###
 
@@ -23,7 +25,7 @@ ggsave(paste0('filter_peaks.', NAME, '.init.hist.pdf'), path = OUT_DIR)
 # Remove long peaks
 bed_df <- bed_df %>%
   arrange(-len) %>%
-  filter(len < 3000)
+  filter(len < 5000)
   
 ggplot(bed_df) +
   aes(x = len) +
