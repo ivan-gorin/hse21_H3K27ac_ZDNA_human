@@ -6,10 +6,10 @@ source('lib.R')
 ###
 
 #NAME <- 'DeepZ'
-#NAME <- 'H3K4me1_A549.ENCFF379KHF.hg19'
+NAME <- 'H3K4me1_A549.ENCFF379KHF.hg19'
 #NAME <- 'H3K4me1_A549.ENCFF379KHF.hg38'
 #NAME <- 'H3K4me1_A549.ENCFF675YHQ.hg19'
-NAME <- 'H3K4me1_A549.ENCFF675YHQ.hg38'
+#NAME <- 'H3K4me1_A549.ENCFF675YHQ.hg38'
 
 ###
 
@@ -18,6 +18,7 @@ colnames(bed_df) <- c('chrom', 'start', 'end', 'name', 'score')
 #colnames(bed_df) <- c('chrom', 'start', 'end')
 bed_df$len <- bed_df$end - bed_df$start
 
+max(bed_df$len)
 
 
 ggplot(bed_df) +
