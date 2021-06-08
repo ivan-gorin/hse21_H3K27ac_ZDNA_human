@@ -26,7 +26,7 @@ ggsave(paste0('filter_peaks.', NAME, '.init.hist.pdf'), path = OUT_DIR)
 bed_df <- bed_df %>%
   arrange(-len) %>%
   filter(len < 4000)
-  
+    
 ggplot(bed_df) +
   aes(x = len) +
   geom_histogram() +
