@@ -5,12 +5,13 @@ source('lib.R')
 
 ###
 
-NAME <- 'G4'
+#NAME <- 'G4'
 #NAME <- 'H3K4me1_A549.ENCFF379KHF.hg19'
 #NAME <- 'H3K4me1_A549.ENCFF379KHF.hg38'
 #NAME <- 'H3K4me1_A549.ENCFF675YHQ.hg19'
 #NAME <- 'H3K4me1_A549.ENCFF675YHQ.hg38'
 
+NAME <- 'H3K4me1_A549.intersect_with_G4'
 ###
 
 bed_df <- read.delim(paste0(DATA_DIR, NAME, '.bed'), as.is = TRUE, header = FALSE)

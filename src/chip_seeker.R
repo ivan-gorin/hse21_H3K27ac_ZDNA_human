@@ -19,8 +19,8 @@ library(clusterProfiler)
 
 ###
 
-#NAME <- 'H3K4me3_A549.intersect_with_DeepZ'
-NAME <- 'G4'
+NAME <- 'H3K4me1_A549.intersect_with_G4'
+#NAME <- 'G4'
 
 #NAME <- 'H3K4me1_A549.ENCFF379KHF.hg19.filtered'
 #NAME <- 'H3K4me1_A549.ENCFF675YHQ.hg19.filtered'
